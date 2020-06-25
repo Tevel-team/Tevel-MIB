@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GSCMIB>
+  <Telemetry>
+    <ServiceType name="beacon" value="0">
+      <ServiceSubType name="beacon_data" value="1"/>
+        <Parameter name="vbat" isLittleEndian="true" type="uint16"/>
+        <Parameter name="volt_5V" isLittleEndian="true" type="uint16"/>
+        <Parameter name="volt_3V3" isLittleEndian="true" type="uint16"/>
+        <Parameter name="charging_power" isLittleEndian="true" type="uint16"/>
+        <Parameter name="consumed_power" isLittleEndian="true" type="uint16"/>
+        <Parameter name="electric_current" isLittleEndian="true" type="uint16"/>
+        <Parameter name="current_3V3" isLittleEndian="true" type="uint16"/>
+        <Parameter name="current_5V" isLittleEndian="true" type="uint16"/>
+        <Parameter name="mcu_temp" isLittleEndian="true" type="int16"/>
+        <Parameter name="bat_temp" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_0" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_1" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_2" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_3" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_4" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_5" isLittleEndian="true" type="int16"/>
+        <Parameter name="sat_time" isLittleEndian="true" type="uint32"/>
+        <Parameter name="free_memory" isLittleEndian="true" type="uint32"/>
+        <Parameter name="corrupt_bytes" isLittleEndian="true" type="uint32"/>
+        <Parameter name="number_of_resets" isLittleEndian="true" type="uint32"/>
+        <Parameter name="num_of_cmd_resets" isLittleEndian="true" type="uint32"/>
+    </ServiceType>
+    <ServiceType name="dump_data" value="105">
+      <ServiceSubType name="wod" value="0">
+        <Parameter name="satellite_time" isLittleEndian="true" type="datetime"/>
+        <Parameter name="vbat" isLittleEndian="true" type="uint16"/>
+        <Parameter name="volt_5V" isLittleEndian="true" type="uint16"/>
+        <Parameter name="volt_3V3" isLittleEndian="true" type="uint16"/>
+        <Parameter name="charging_power" isLittleEndian="true" type="uint16"/>
+        <Parameter name="consumed_power" isLittleEndian="true" type="uint16"/>
+        <Parameter name="electric_current" isLittleEndian="true" type="uint16"/>
+        <Parameter name="current_3V3" isLittleEndian="true" type="uint16"/>
+        <Parameter name="current_5V" isLittleEndian="true" type="uint16"/>
+        <Parameter name="mcu_temp" isLittleEndian="true" type="int16"/>
+        <Parameter name="bat_temp" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_0" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_1" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_2" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_3" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_4" isLittleEndian="true" type="int16"/>
+        <Parameter name="solar_panels_5" isLittleEndian="true" type="int16"/>
+        <Parameter name="sat_time" isLittleEndian="true" type="uint32"/>
+        <Parameter name="free_memory" isLittleEndian="true" type="uint32"/>
+        <Parameter name="corrupt_bytes" isLittleEndian="true" type="uint32"/>
+        <Parameter name="number_of_resets" isLittleEndian="true" type="uint32"/>
+        <Parameter name="num_of_cmd_resets" isLittleEndian="true" type="uint32"/>
+      </ServiceSubType>
+      <ServiceSubType name="eps" value="1">
+        <Parameter name="satellite_time" isLittleEndian="true" type="datetime"/>
+        <Parameter name="reply_header-stid" isLittleEndian="false" type="byte"/>
+        <Parameter name="reply_header-ivid" isLittleEndian="false" type="byte"/>
+        <Parameter name="reply_header-rc" isLittleEndian="false" type="byte"/>
+        <Parameter name="reply_header-bid" isLittleEndian="false" type="byte"/>
+        <Parameter name="reply_header-cmderr" isLittleEndian="false" type="byte"/>
+        <Parameter name="reply_header-stat" isLittleEndian="false" type="byte"/>
+        <Parameter name="reserved" isLittleEndian="false" type="byte"/>
+        <Parameter name="volt_brdsup" isLittleEndian="true" type="int16"/>
+        <Parameter name="temp" isLittleEndian="true" type="int16"/>
+        <Parameter name="dist_input-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="dist_input-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="dist_input-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="stat_obc_on" isLittleEndian="true" type="uint16"/>
+        <Parameter name="stat_obc_ocf" isLittleEndian="true" type="uint16"/>
+        <Parameter name="bat_stat" isLittleEndian="true" type="uint16"/>
+        <Parameter name="temp2" isLittleEndian="true" type="int16"/>
+        <Parameter name="temp3" isLittleEndian="true" type="int16"/>
+        <Parameter name="volt_vd0" isLittleEndian="true" type="int16"/>
+        <Parameter name="volt_vd1" isLittleEndian="true" type="int16"/>
+        <Parameter name="volt_vd2" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc00-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc00-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc00-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc01-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc01-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc01-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc02-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc02-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc02-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc03-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc03-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc03-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc04-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc04-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc04-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc05-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc05-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc05-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc06-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc06-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc06-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc07-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc07-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc07-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc08-volt" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc08-current" isLittleEndian="true" type="int16"/>
+        <Parameter name="vip_obc08-power" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc1-volt_in_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc1-curr_in_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc1-volt_out_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc1-curr_out_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc2-volt_in_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc2-curr_in_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc2-volt_out_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc2-curr_out_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc3-volt_in_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc3-curr_in_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc3-volt_out_mppt" isLittleEndian="true" type="int16"/>
+        <Parameter name="cc3-curr_out_mppt" isLittleEndian="true" type="int16"/>
+      </ServiceSubType>
+      <ServiceSubType name="solar_panels" value="2"/>
+      <ServiceSubType name="tx_revc" value="3">
+        <Parameter name="satellite_time" isLittleEndian="true" type="datetime"/>
+        <Parameter name="tx_reflpwr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="tx_fwrdpwr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="bus_volt" isLittleEndian="true" type="uint16"/>
+        <Parameter name="vutotal_curr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="vutx_curr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="vurx_curr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="vupa_curr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="pa_temp" isLittleEndian="true" type="uint16"/>
+        <Parameter name="board_temp" isLittleEndian="true" type="uint16"/>
+      </ServiceSubType>
+      <ServiceSubType name="rx_revc" value="4">
+        <Parameter name="satellite_time" isLittleEndian="true" type="datetime"/>
+        <Parameter name="rx_doppler" isLittleEndian="true" type="uint16"/>
+        <Parameter name="rx_rssi" isLittleEndian="true" type="uint16"/>
+        <Parameter name="bus_volt" isLittleEndian="true" type="uint16"/>
+        <Parameter name="vutotal_curr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="vutx_curr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="vurx_curr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="vupa_curr" isLittleEndian="true" type="uint16"/>
+        <Parameter name="pa_temp" isLittleEndian="true" type="uint16"/>
+        <Parameter name="board_temp" isLittleEndian="true" type="uint16"/>
+      </ServiceSubType>
+      <ServiceSubType name="antenna" value="5"/>
+    </ServiceType>
+  </Telemetry>
+  <Telecommands>
+    <ServiceType name="trxvu" value="0">
+      <ServiceSubType name="dump" value="105">
+        <Parameter name="dump_type" isLittleEndian="false" type="byte"/>
+        <Parameter name="start_time" isLittleEndian="true" type="datetime"/>
+        <Parameter name="end_time" isLittleEndian="true" type="datetime"/>
+      </ServiceSubType>
+    </ServiceType>
+  </Telecommands>
+  <TelemetryCals/>
+  <TelecommandCals/>
+</GSCMIB>
